@@ -5,47 +5,52 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
     position: relative;
     overflow: hidden;
+    background-color: #e5e8e8; /* Light mode background color */
+}
+
+.dark-mode {
+    background-color: #222222; /* Dark mode background color */
 }
 
 /* For desktop browsers */
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #222222;
+        background-color: #222222; /* Light mode background color */
     }
 }
 
 /* For Safari on iOS */
 @media only screen and (min-color-index: 0) and (-webkit-min-device-pixel-ratio: 1.5) {
     body {
-        background-color: #222222;
+        background-color: #222222; /* Light mode background color */
     }
 }
 
 /* For Chrome on Android */
 @media (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
     body {
-        background-color: #222222;
+        background-color: #222222; /* Light mode background color */
     }
 }
 
 /* For Firefox on Android */
 @media (device-width: 360px) and (device-height: 640px) and (-moz-device-pixel-ratio: 3) {
     body {
-        background-color: #222222;
+        background-color: #222222; /* Light mode background color */
     }
 }
 
 /* For Edge on Windows */
 @media (-ms-high-contrast: active), (-ms-high-contrast: none) {
     body {
-        background-color: #222222;
+        background-color: #222222; /* Light mode background color */
     }
 }
 
 /* For Internet Explorer on Windows */
 @media screen and (ms-high-contrast: active) {
     body {
-        background-color: #222222;
+        background-color: #222222; /* Light mode background color */
     }
 }
 

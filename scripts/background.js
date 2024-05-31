@@ -37,8 +37,8 @@ class DotGrid {
         let size = 1;
         let gridSize = 40;
         let dotColor = getComputedStyle(document.body).backgroundColor === 'rgb(34, 34, 34)' ? 'white' : 'black';
-        for (let i = 0; i < this.canvasWidth / this.dpr / gridSize - 1; i++) {
-            for (let j = 0; j < this.canvasHeight / this.dpr / gridSize - 1; j++) {
+        for (let i = 0; i < this.canvasWidth / this.dpr / gridSize; i++) {
+            for (let j = 0; j < this.canvasHeight / this.dpr / gridSize; j++) {
                 let x = i * gridSize;
                 let y = j * gridSize;
                 let dist = this.pythag(x, y, this.mouseX, this.mouseY);

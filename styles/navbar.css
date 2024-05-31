@@ -15,8 +15,18 @@
 }
 
 .mode-switcher button {
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0;
     color: #333;
     transition: color 0.3s ease;
+}
+
+.mode-switcher button:hover {
+    color: #555;
 }
 
 .dark-mode .mode-switcher button {

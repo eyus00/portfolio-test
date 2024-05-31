@@ -1,3 +1,4 @@
+// background.js
 class DotGrid {
     constructor(container = "sketch") {
         this.canvasElement = document.getElementById(container);
@@ -20,6 +21,9 @@ class DotGrid {
     }
 
     init() {
+        this.canvasElement.style.position = 'absolute';
+        this.canvasElement.style.top = '0';
+        this.canvasElement.style.left = '0';
         window.requestAnimationFrame(this.draw.bind(this));
         document.body.addEventListener("mousemove", this.onMouseUpdate.bind(this), false);
     }
@@ -33,8 +37,8 @@ class DotGrid {
         let size = 1;
         let gridSize = 40;
         let dotColor = getComputedStyle(document.body).backgroundColor === 'rgb(34, 34, 34)' ? 'white' : 'black';
-        for (let i = 2; i < this.canvasWidth / this.dpr / gridSize - 1; i++) {
-            for (let j = 2; j < this.canvasHeight / this.dpr / gridSize - 1; j++) {
+        for (let i = 0; i < this.canvasWidth / this.dpr / gridSize - 1; i++) {
+            for (let j = 0; j < this.canvasHeight / this.dpr / gridSize - 1; j++) {
                 let x = i * gridSize;
                 let y = j * gridSize;
                 let dist = this.pythag(x, y, this.mouseX, this.mouseY);
@@ -49,7 +53,7 @@ class DotGrid {
     pythag(ellipseX, ellipseY, mouseX, mouseY) {
         let x = mouseX;
         let y = mouseY;
-        if (x === NaN) {
+        if (x === undefined || x === NaN || y === undefined || y === NaN) {
             return 1;
         } else {
             let leg1 = Math.abs(x - ellipseX);

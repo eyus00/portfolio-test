@@ -1,11 +1,52 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #e5e8e8;
     font-family: 'Roboto Mono', monospace;
     transition: background-color 0.3s ease, color 0.3s ease;
     position: relative;
     overflow: hidden;
+}
+
+/* For desktop browsers */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222222;
+    }
+}
+
+/* For Safari on iOS */
+@media only screen and (min-color-index: 0) and (-webkit-min-device-pixel-ratio: 1.5) {
+    body {
+        background-color: #222222;
+    }
+}
+
+/* For Chrome on Android */
+@media (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    body {
+        background-color: #222222;
+    }
+}
+
+/* For Firefox on Android */
+@media (device-width: 360px) and (device-height: 640px) and (-moz-device-pixel-ratio: 3) {
+    body {
+        background-color: #222222;
+    }
+}
+
+/* For Edge on Windows */
+@media (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    body {
+        background-color: #222222;
+    }
+}
+
+/* For Internet Explorer on Windows */
+@media screen and (ms-high-contrast: active) {
+    body {
+        background-color: #222222;
+    }
 }
 
 .container {
@@ -109,8 +150,8 @@ h1 {
 .contact-button {
     display: inline-block;
     margin-top: 30px;
-    padding: 15px 30px; /* Adjusted padding for larger screens */
-    font-size: 1.5em; /* Increased font size for larger screens */
+    padding: 15px 30px;
+    font-size: 1.5em;
     color: #fff;
     text-decoration: none;
     background: rgba(0, 0, 0, 0.8);

@@ -1,0 +1,52 @@
+@media only screen and (max-width: 1440px) {
+    .container {
+        max-width: 1200px;
+        padding: 0 100px;
+    }
+    h1 {
+        font-size: 5em;
+    }
+    .header {
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 728px;
+        padding: 0 20px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .header {
+        margin: 10px 0;
+    }
+    .description {
+        font-size: 1rem;
+    }
+    .contact-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .container {
+        max-width: 320px;
+        padding: 0 10px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .header {
+        margin: 10px 0;
+    }
+    .description {
+        font-size: 0.9rem;
+    }
+    .contact-button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}

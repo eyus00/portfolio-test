@@ -22,6 +22,7 @@ function changeGradient() {
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
     updateCursorColor();
+    updateBackgroundColor();
     grid.draw();
 }
 
@@ -30,6 +31,15 @@ function updateCursorColor() {
         cursorElement.style.color = 'white';
     } else {
         cursorElement.style.color = 'black';
+    }
+}
+
+function updateBackgroundColor() {
+    const canvasElement = document.getElementById('sketch');
+    if (document.body.classList.contains('dark-mode')) {
+        canvasElement.style.backgroundColor = '#222222';
+    } else {
+        canvasElement.style.backgroundColor = '#e5e8e8';
     }
 }
 
@@ -59,4 +69,5 @@ function typeEffect() {
 
 modeToggleButton.addEventListener('click', toggleDarkMode);
 updateCursorColor();
+updateBackgroundColor();
 typeEffect();

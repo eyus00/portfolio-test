@@ -1,52 +1,33 @@
 .header {
-    position: relative; /* Ensure z-index works */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 15px; /* Adjusted padding */
-    margin: 40px 0 20px; /* Adjusted margin to bring header down */
     background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-    margin-right: auto; /* Align logo to the left */
-    height: 40px; /* Set height to center vertically */
-    overflow: hidden; /* Hide overflow */
-    border-radius: 50%; /* Make the logo circular */
-}
-
-.logo-container img {
-    height: 100%; /* Adjust height to container */
-    border-radius: 50%; /* Make the logo circular */
+.dark-mode .header {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .mode-switcher button {
-    font-size: 1.2em; /* Smaller font size */
+    font-size: 1.2em;
     cursor: pointer;
     border: none;
     background: transparent;
     outline: none;
     padding: 0;
-    color: #333; /* Dark color for light mode */
+    color: #333;
     transition: color 0.3s ease;
 }
 
 .mode-switcher button:hover {
-    color: #555; /* Lighter color on hover */
+    color: #555;
 }
-
-.content {
-    text-align: left;
-    padding: 10px 0; /* Adjusted padding */
-}
-
 
 .dark-mode .mode-switcher button {
     color: #ddd;

@@ -1,15 +1,11 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #e5e8e8;
     font-family: 'Roboto Mono', monospace;
     transition: background-color 0.3s ease, color 0.3s ease;
     position: relative;
     overflow: hidden;
-    background-color: #e5e8e8; /* Light mode background color */
-}
-
-.dark-mode {
-    background-color: #222222; /* Dark mode background color */
 }
 
 .container {
@@ -113,8 +109,8 @@ h1 {
 .contact-button {
     display: inline-block;
     margin-top: 30px;
-    padding: 15px 30px;
-    font-size: 1.5em;
+    padding: 15px 30px; /* Adjusted padding for larger screens */
+    font-size: 1.5em; /* Increased font size for larger screens */
     color: #fff;
     text-decoration: none;
     background: rgba(0, 0, 0, 0.8);
